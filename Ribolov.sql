@@ -67,4 +67,5 @@ insert into ribe (naziv, tip, cijena, velicina, mjesto) values
 ('Trlja', 'morska', 90.00, 10.00, 'Sredozemno more'),
 ('Zubatac', 'morska', 150.00, 25.00, 'Jadransko more'),
 ('Tuna', 'morska', 250.00, 50.00, 'Jadransko more'),
-('Oslić', 'morska', 75.00, 12.00, 'Jadransko more');
+('Oslić', 'morska', 75.00, 12.00, 'Jadransko more')
+;
