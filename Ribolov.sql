@@ -19,8 +19,8 @@ create table sportski_ribolov(
     tehnika varchar(50) not null,
     vrsta_ribe varchar(50) not null,
     lokacija varchar(50) not null
-	riba int not null;
-	foreign key (riba) references ribe(sifra)
+	riba int not null references ribe (sifra)
+
 );
 
 create table rekreativni_ribolov(
@@ -29,18 +29,17 @@ create table rekreativni_ribolov(
     oprema varchar(40),
     minimalna_mjera decimal(5,2) not null,
     lokacija varchar(50)
-	riba int not null ;
-	foreign key (riba) references ribe(sifra)
+	riba int not null references ribe (sifra)
 );
 
 create table ribolov(
     sifra int not null primary key identity(1,1),
     disciplina varchar(50),
-    riba int not null,
+    riba int not null references ribe (sifra),
     tehnika varchar(50),
     lokacija varchar(50),
     datum date
-	foreign key (riba) references ribe(sifra)
+
 );
 
  insert into sportski_ribolov(tehnika,vrsta_ribe,lokacija) values
