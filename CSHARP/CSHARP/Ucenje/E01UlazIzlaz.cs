@@ -15,7 +15,7 @@ namespace Ucenje
 
             //ulaz
             string ime = Console.ReadLine();
-            Console.WriteLine("Unjeli ste" ime);
+            Console.WriteLine("Unjeli ste", ime);
 
             // formatirani 
             Console.WriteLine("unjeli ste{0}. Bravo", ime);
