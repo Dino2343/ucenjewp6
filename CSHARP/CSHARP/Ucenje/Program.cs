@@ -1,6 +1,6 @@
 ﻿using Ucenje;
 
-E02Z1.Izvedi();
+E03Z1.Izvedi();
 
 
 // See https://aka.ms/new-console-template for more information
