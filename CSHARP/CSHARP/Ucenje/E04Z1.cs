@@ -12,7 +12,7 @@ namespace Ucenje
         {
             Console.Write("Unesite broj godina: ");
             int godine = int.Parse(Console.ReadLine());
-            if (godine < 0 | godine > 112)
+            if (godine < 0 || godine > 112)
             {
                 Console.WriteLine("GREŠKA");
                 return;

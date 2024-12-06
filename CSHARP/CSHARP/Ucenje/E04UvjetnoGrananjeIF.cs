@@ -102,8 +102,8 @@ namespace Ucenje
             }
 
 
-            Console.WriteLine(grad=="Osijek" ? "Super" : "Nije super");
-            Console.WriteLine((grad == "Osijek" ? "": "Nije ") + "Super"));
+            Console.WriteLine(grad == "Osijek" ? "Super" : "Nije super");
+            Console.WriteLine((grad == "Osijek" ? "" : "Nije ") + "Super");
         }    
 
 
