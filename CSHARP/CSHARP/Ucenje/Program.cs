@@ -1,6 +1,6 @@
 ﻿using Ucenje;
 
-E03Z1.Izvedi();
+E04UvjetnoGrananjeIF.Izvedi();
 
 
 // See https://aka.ms/new-console-template for more information
