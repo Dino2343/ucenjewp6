@@ -42,7 +42,7 @@ namespace Ucenje
             }
             else
             {
-                Console.WriteLine("Najmanji broj je: " + e;
+                Console.WriteLine("Najmanji broj je: " + e);
             }
         }
 
