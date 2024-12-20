@@ -15,20 +15,20 @@ namespace Ucenje
             Tip2(7);
             Tip2(5);
 
-            Tip2(10,"Poziv druge varijante metode Tip2");
+            Tip2(10, "Poziv druge varijante metode Tip2");
 
             int i = Tip3() + 1;
             Console.WriteLine(i);
             int[] niz = { 2, 4, 4, 3, 1, 2, 3, 4, 6 };
             Console.WriteLine(Tip4(niz));
             Tip4(niz);  // ona ce se izvesti ali nijedan rezultat nema efekta u ovoj metodi 
-            
+
         }
 
 
         //tijelo metode 
         //Tip1: Ne prima parametre ne vraca vrijednosti 
-        static void Tip1() 
+        static void Tip1()
         {
             Console.WriteLine("ispis iz prvog tipa metode");
             Console.WriteLine("************");
@@ -46,7 +46,7 @@ namespace Ucenje
         }
         //potpis metode 
         //naziv + lista parametara 
-        private static void Tip2(int x,string naslov)
+        private static void Tip2(int x, string naslov)
         {
             Console.WriteLine(naslov);
             Tip2(x);
@@ -64,10 +64,10 @@ namespace Ucenje
         /// </summary>
         /// <param name="niz">Niz cijelih brojeva</param>
         /// <returns>Suma primljenih nizova</returns>
-        private static int Tip4(int[]niz)
+        private static int Tip4(int[] niz)
         {
-            int suma = 0;   
-            foreach(int i in niz)
+            int suma = 0;
+            foreach (int i in niz)
             {
                 suma += i;
             }
@@ -84,10 +84,36 @@ namespace Ucenje
                 {
                     return int.Parse(Console.ReadLine());
                 }
-                catch 
+                catch
                 {
                     Console.WriteLine("Problem kod ucitanja broja !!!!!!!");
-                 
+
+                }
+            }
+
+
+            //return 0; // kasnije obrisati 
+        }
+        public static int UcitajCijeliBroj(string poruka, int min, int max)
+        {
+            int i;
+            while (true)
+            {
+                Console.WriteLine(poruka);
+                try
+                {
+                    i = int.Parse(Console.ReadLine());
+                    if (i < min || i > max)
+                    {
+                        Console.WriteLine("Broj nije u danom rasponu{0}-{1}", min, max);
+                        continue;
+                    }
+                    return i;
+                }
+                catch
+                {
+                    Console.WriteLine("Problem kod ucitanja broja !!!!!!!");
+
                 }
             }
 

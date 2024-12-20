@@ -1,6 +1,6 @@
 ﻿using Ucenje;
 
-E12Z1.Izvedi();
+E14Vjezbanje.Izvedi();
 
 
 
