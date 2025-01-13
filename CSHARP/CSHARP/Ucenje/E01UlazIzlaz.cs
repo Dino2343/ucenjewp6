@@ -1,24 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Ucenje
+﻿namespace Ucenje
 {
     internal class E01UlazIzlaz
     {
+
         public static void Izvedi()
         {
-            //izlaz
+            // Ovo je izlaz
             Console.Write("Unesi svoje ime: ");
 
-            //ulaz
-            string ime = Console.ReadLine();
-            Console.WriteLine("Unjeli ste", ime);
 
-            // formatirani 
-            Console.WriteLine("unjeli ste{0}. Bravo", ime);
+            // Ulaz podataka u program
+            string Ime = Console.ReadLine();
+
+            Console.WriteLine("Unijeli ste " + Ime);
+
+            // formatirani način ispisa
+            Console.WriteLine("Unijeli ste {0}. Bravo!", Ime);
+
         }
 
 
