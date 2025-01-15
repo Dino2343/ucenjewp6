@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Ucenje.E17KlasaObjekt.zavrsnirad
 {
-    internal class Rubolov
+    public class Ribolov
     {
+        public int Sifra { get; set; }
+        public string Disciplina { get; set; }
+        public string Tehnika { get; set; }
+        public DateTime Datum { get; set; }
+
     }
 }
