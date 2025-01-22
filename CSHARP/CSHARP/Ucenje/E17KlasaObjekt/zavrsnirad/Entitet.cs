@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ucenje.E17KlasaObjekt.zavrsnirad
 {
-    internal class Entitet
+    internal class Entitet:Ribe
     {
     }
 }

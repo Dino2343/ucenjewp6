@@ -9,9 +9,9 @@ namespace Ucenje.E17KlasaObjekt.zavrsnirad
     public class Ribolov
     {
         public int Sifra { get; set; }
-        public string Disciplina { get; set; }
-        public string Tehnika { get; set; }
-        public DateTime Datum { get; set; }
+        public string Disciplina { get; set; } = "";
+        public string Tehnika { get; set; } = "";
+        public DateTime Datum { get; set; } 
 
     }
 }
