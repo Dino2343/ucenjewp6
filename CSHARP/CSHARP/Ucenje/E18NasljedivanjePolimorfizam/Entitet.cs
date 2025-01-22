@@ -5,16 +5,16 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Ucenje.E18NasljedivanjePolimorfizam
-
-    // apstrapna klasa je ona klasa koja ne moze imati instancu
-    // sluzi tome da zadrzava zajednicka svojstva i metode te da ju netko nasljedi 
 {
-    internal abstract class Entitet : Object // 
+    // Apstrakna klasa je ona klasa koja ne može imati instancu
+    // služi tome da sadržava zajednička svojstva i metode te da ju netko nasljedi
+    public abstract class Entitet : Object // čitati https://learn.microsoft.com/en-us/dotnet/api/system.object?view=net-9.0#methods
     {
         public int Sifra { get; set; }
+
         public override string ToString()
         {
-            return base.ToString();
+            return Sifra.ToString();
         }
 
     }

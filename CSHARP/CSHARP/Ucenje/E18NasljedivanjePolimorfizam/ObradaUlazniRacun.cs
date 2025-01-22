@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Ucenje.E18NasljedivanjePolimorfizam
 {
-    internal class ObradaUlazniRacun : Obrada
+    public class ObradaUlazniRacun : Obrada
     {
         public override void Procesuiraj()
         {
-            Console.WriteLine("Obradujem ulazni racun" );
-            Console.WriteLine("plati ga");
+            Console.WriteLine("Obrađujem ulazni račun");
+            Console.WriteLine("Plati ga");
         }
     }
 }

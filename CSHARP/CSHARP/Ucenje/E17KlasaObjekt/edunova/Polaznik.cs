@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ucenje.E17KlasaObjekt.eunova
+namespace Ucenje.E17KlasaObjekt.edunova
 {
     public class Polaznik
     {
@@ -13,12 +13,10 @@ namespace Ucenje.E17KlasaObjekt.eunova
         public string Prezime { get; set; } = "";
         public string Email { get; set; } = "";
         public string? Oib { get; set; }
-       public string ImePrezime()
+
+        public string ImePrezime()
         {
             return Ime + " " + Prezime;
-
-
-
         }
     }
 }

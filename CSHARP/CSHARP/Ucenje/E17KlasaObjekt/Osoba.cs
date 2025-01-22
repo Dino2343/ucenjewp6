@@ -6,26 +6,27 @@ using System.Threading.Tasks;
 
 namespace Ucenje.E17KlasaObjekt
 {
-
-    //Klasa je opisnik objekta 
-
+    // Klasa je opisnik objekta  -> NAUČITI NAPAMET
     internal class Osoba
     {
-        //klasa sadrzi svojstva 
-        public int Sifra { get; set; } // OOP prinicip ucahurivanja
-        public string? Ime { get; set; } // ? oznacava kako ime moze biti null
-        public string? Prezime { get; set; } 
+        // klasa sadrži svojstva (property)
+        public int Sifra { get; set; } // OOP princip učahurivanja
+        public string? Ime { get; set; } // ? označava kako Ime može biti null
+        public string? Prezime { get; set; }
+
         public Mjesto? Mjesto { get; set; }
 
-        //Klasa sadzi metode (ne moraju biti staticen)
+        // klasa sadrži metode (i ne moraju biti statične)
         public string ImePrezime()
         {
-            Console.WriteLine("Izvodenje metode s objekta");
+            Console.WriteLine("Izvođenje metode s objekta");
             return Ime + " " + Prezime;
         }
+
         public static void Izvedi()
         {
-            Console.WriteLine("Izvodenje metode klasae");
+            Console.WriteLine("Izvođenje statične metode s klase");
         }
+
     }
 }

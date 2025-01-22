@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ucenje.E17KlasaObjekt.zavrsnirad
+namespace Ucenje.E19GenericiLambdaEkstenzije
 {
-    internal class Entitet:Ribe
+    public interface ISucelje
     {
+        public void OdradiPosao();
     }
 }
